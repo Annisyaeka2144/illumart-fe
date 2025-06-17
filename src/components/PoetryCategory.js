@@ -54,7 +54,7 @@ const PoetryCategory = () => {
           <div key={index} className="puisi-card">
             <p className="license">Lisensi: {puisi.lisensi}</p>
             <img
-              src={`http://localhost:5000/${puisi.file_path.replace(/\\/g, "/")}`}
+              src={`https://rw-illlumart-production.up.railway.app/${puisi.file_path.replace(/\\/g, "/")}`}
               alt={puisi.nama}
               className="puisi-image"
             />
