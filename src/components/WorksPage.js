@@ -103,7 +103,7 @@ const WorksPage = () => {
                   <div className="table-row" key={work.id}>
                     <div className="col-karya">
                       <img
-                        src={`http://localhost:5000/${work.file_path}`}
+                        src={`https://rw-illlumart-production.up.railway.app/uploads//${work.file_path}`}
                         alt={work.nama}
                         className="karya-thumbnail"
                       />
