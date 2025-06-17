@@ -6,7 +6,7 @@ const LicensePage = () => {
   const [karyaList, setKaryaList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/karya")
+    fetch("https://rw-illlumart-production.up.railway.app/api/karya")
       .then(response => response.json())
       .then(data => setKaryaList(data))
       .catch(error => console.error("Gagal mengambil data karya:", error));

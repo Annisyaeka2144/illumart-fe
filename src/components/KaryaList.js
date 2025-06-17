@@ -7,7 +7,7 @@ const KaryaList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/karya')
+    fetch('https://rw-illlumart-production.up.railway.app/api/karya')
       .then(response => response.json())
       .then(data => setKaryas(data))
       .catch(error => console.error('Gagal fetch karya:', error));

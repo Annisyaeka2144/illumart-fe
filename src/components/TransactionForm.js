@@ -27,7 +27,7 @@ const TransactionForm = () => {
   };
 
   const handleConfirmPayment = () => {
-    fetch('http://localhost:5000/api/transaksi/bayar', {
+    fetch('https://rw-illlumart-production.up.railway.app/api/transaksi/bayar', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -53,7 +53,7 @@ const TransactionForm = () => {
   };
 
   const handleDownload = () => {
-    fetch('http://localhost:5000/api/download/log', {
+    fetch('https://rw-illlumart-production.up.railway.app/api/download/log', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -9,7 +9,7 @@ function Collection() {
   const location = useLocation();
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/download/logs')
+    fetch('https://rw-illlumart-production.up.railway.app/api/download/logs')
       .then(res => res.json())
       .then(data => {
         console.log('Data koleksi:', data.logs);

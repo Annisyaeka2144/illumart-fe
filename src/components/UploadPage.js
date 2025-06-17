@@ -38,7 +38,7 @@ function UploadPage() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/api/karya', {
+      const response = await fetch('https://rw-illlumart-production.up.railway.app/api/karya', {
         method: 'POST',
         body: formData,
       });

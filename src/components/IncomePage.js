@@ -10,7 +10,7 @@ const IncomePage = () => {
   const location = useLocation(); // untuk deteksi path aktif
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/transaksi')
+    fetch('https://rw-illlumart-production.up.railway.app/api/transaksi')
       .then(async (res) => {
         if (!res.ok) {
           const text = await res.text();

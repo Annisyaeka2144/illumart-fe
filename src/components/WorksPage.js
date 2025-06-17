@@ -11,7 +11,7 @@ const WorksPage = () => {
   useEffect(() => {
     const fetchWorks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/karya');
+        const response = await fetch('https://rw-illlumart-production.up.railway.app/api/karya');
         const data = await response.json();
         setWorks(data); // Set the fetched data to the state
       } catch (error) {
@@ -29,7 +29,7 @@ const WorksPage = () => {
   // Handle status update (marking a work as sold or not sold)
   const handleUpdateStatus = async (id, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/karya/${id}`, {
+      const response = await fetch(`https://rw-illlumart-production.up.railway.app/api/karya/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

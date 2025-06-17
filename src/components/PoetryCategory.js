@@ -9,7 +9,7 @@ const PoetryCategory = () => {
   const [puisiList, setPuisiList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/karya?kategori=puisi")
+    fetch("https://rw-illlumart-production.up.railway.app/api/karya?kategori=puisi")
       .then((response) => response.json())
       .then((data) => setPuisiList(data))
       .catch((error) => console.error("Gagal ambil data:", error));

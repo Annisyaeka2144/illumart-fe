@@ -17,7 +17,7 @@ const GalleryPage = () => {
     setLoading(true);
     setError(null);
 
-    let url = "http://localhost:5000/api/karya";
+    let url = "https://rw-illlumart-production.up.railway.app/api/karya";
     if (selectedCategory !== "semua") {
       url += `?kategori=${selectedCategory}`;
     }

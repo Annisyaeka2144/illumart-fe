@@ -9,7 +9,7 @@ const NovelCategory = () => {
   const [novelList, setNovelList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/karya")
+    fetch("https://rw-illlumart-production.up.railway.app/api/karya")
       .then((response) => response.json())
       .then((data) => {
         const novels = data.filter(item => item.kategori.toLowerCase() === "novel");

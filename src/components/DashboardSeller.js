@@ -10,11 +10,11 @@ const DashboardSeller = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const worksResponse = await fetch('http://localhost:5000/api/karya');
+        const worksResponse = await fetch('https://rw-illlumart-production.up.railway.app/api/karya');
         const worksData = await worksResponse.json();
         setWorksCount(worksData.length);
 
-        const salesResponse = await fetch('http://localhost:5000/api/transaksi');
+        const salesResponse = await fetch('https://rw-illlumart-production.up.railway.app/api/transaksi');
         const salesData = await salesResponse.json();
         setSalesHistory(salesData);
 

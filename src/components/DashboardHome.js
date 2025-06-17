@@ -11,7 +11,7 @@ const DashboardHome = () => {
   useEffect(() => {
     const fetchKaryas = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/karya');
+        const response = await fetch('https://rw-illlumart-production.up.railway.app/api/karya');
         if (!response.ok) {
           throw new Error('Gagal mengambil data');
         }

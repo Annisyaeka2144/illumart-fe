@@ -8,7 +8,7 @@ const NotifPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/transaksi") // pastikan endpoint backend benar
+    fetch("https://rw-illlumart-production.up.railway.app/api/transaksi") // pastikan endpoint backend benar
       .then(async (response) => {
         if (!response.ok) {
           const text = await response.text();
