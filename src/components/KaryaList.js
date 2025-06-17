@@ -20,8 +20,8 @@ const KaryaList = () => {
         namaKarya: karya.nama,
         penulis: karya.penulis,
         harga: karya.harga,
-        gambar: `http://https://rw-illlumart-production.up.railway.app/${karya.file_path}`,
-        fileUrl: `http://https://rw-illlumart-production.up.railway.app/${karya.file_url}`, // pastikan ini tersedia
+        gambar: `https://rw-illlumart-production.up.railway.app/${karya.file_path}`,
+        fileUrl: `https://rw-illlumart-production.up.railway.app/${karya.file_url}`, // pastikan ini tersedia
       },
     });
   };
@@ -33,7 +33,7 @@ const KaryaList = () => {
         {karyas.map(karya => (
           <div key={karya.id} className="karya-card">
             <img
-              src={`http://https://rw-illlumart-production.up.railway.app/${karya.file_path}`}
+              src={`https://rw-illlumart-production.up.railway.app/${karya.file_path}`}
               alt={karya.nama}
               className="karya-image"
             />

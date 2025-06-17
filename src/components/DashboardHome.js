@@ -56,7 +56,7 @@ const DashboardHome = () => {
           {karyas.map((karya, index) => (
             <div key={index} className="recommendation-item">
               {karya.file_path ? (
-                <img src={`http://https://rw-illlumart-production.up.railway.app/${karya.file_path}`} alt={karya.nama} />
+                <img src={`https://rw-illlumart-production.up.railway.app/${karya.file_path}`} alt={karya.nama} />
               ) : (
                 <p>Tidak ada gambar</p>
               )}

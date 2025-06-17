@@ -43,8 +43,8 @@ const GalleryPage = () => {
         namaKarya: image.nama,
         penulis: "Anonim",
         harga: image.harga,
-        gambar: `http://https://rw-illlumart-production.up.railway.app/${image.file_path.replace(/\\/g, "/")}`,
-        fileUrl: `http://https://rw-illlumart-production.up.railway.app/${image.fileUrl?.replace(/\\/g, "/") || image.file_path.replace(/\\/g, "/")}`,
+        gambar: `https://rw-illlumart-production.up.railway.app/${image.file_path.replace(/\\/g, "/")}`,
+        fileUrl: `https://rw-illlumart-production.up.railway.app/${image.fileUrl?.replace(/\\/g, "/") || image.file_path.replace(/\\/g, "/")}`,
         karyaId: image.id,
       },
     });
@@ -105,7 +105,7 @@ const GalleryPage = () => {
           <div key={index} className="product-card">
             <p className="license">Lisensi: {image.lisensi}</p>
             <img
-              src={`http://https://rw-illlumart-production.up.railway.app/${image.file_path.replace(/\\/g, "/")}`}
+              src={`https://rw-illlumart-production.up.railway.app/${image.file_path.replace(/\\/g, "/")}`}
               alt={image.nama}
               className="product-image"
               onError={e => e.target.src = "/default-image.png"}
