@@ -24,7 +24,7 @@ const NovelCategory = () => {
         namaKarya: novel.nama,
         penulis: "Anonim", // Ganti jika ada field penulis
         harga: novel.harga,
-        gambar: `http://localhost:5000/${novel.file_path.replace(/\\/g, "/")}`,
+        gambar: `http://https://rw-illlumart-production.up.railway.app/${novel.file_path.replace(/\\/g, "/")}`,
       },
     });
   };
@@ -58,7 +58,7 @@ const NovelCategory = () => {
           <div key={index} className="novel-card">
             <p className="license">Lisensi: {novel.lisensi}</p>
             <img
-              src={`http://localhost:5000/${novel.file_path.replace(/\\/g, "/")}`}
+              src={`http://https://rw-illlumart-production.up.railway.app/${novel.file_path.replace(/\\/g, "/")}`}
               alt={novel.nama}
               className="novel-image"
             />
